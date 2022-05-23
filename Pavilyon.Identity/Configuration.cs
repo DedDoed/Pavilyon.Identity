@@ -42,15 +42,15 @@ namespace Pavilyon.Identity
                     RequirePkce = true,
                     RedirectUris =
                     {
-                        "http://localhost/signin-oidc"
+                        "http://localhost:44303/signin-oidc"
                     },
                     AllowedCorsOrigins =
                     {
-                        "http://localhost"
+                        "http://localhost:44303/"
                     },
                     PostLogoutRedirectUris =
                     {
-                        "http://localhost/signout-oidc"
+                        "http://localhost:44303/signout-oidc"
                     },
                     AllowedScopes =
                     {
