@@ -73,12 +73,6 @@ namespace Pavilyon.Identity
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles(new StaticFileOptions 
-            {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, "Styles")),
-                RequestPath = "/styles"
-            });
             app.UseRouting();
             app.UseIdentityServer();
             app.UseEndpoints(endpoints =>
